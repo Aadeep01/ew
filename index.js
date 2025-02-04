@@ -7,7 +7,7 @@ const app = express()
 const port = 3000
 app.use(bodyParser.json())
 const mongo_uri='mongodb+srv://aadeepkaur:aTlas2607@cluster0.8by9j.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
-mongoose.connect(MONGO_URI, {
+mongoose.connect(mongo_uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
